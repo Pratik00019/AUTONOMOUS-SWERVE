@@ -1,0 +1,550 @@
+<?xml version="1.0" ?>
+
+<robot name="chassi_3" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+
+
+<xacro:property name="body_color" value="Gazebo/Silver" />
+
+
+
+<gazebo>
+
+  <plugin filename="libgazebo_ros_control.so" name="control"/>
+
+</gazebo>
+
+<gazebo reference="base_link">
+
+  <material>Gazebo/Turquoise</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+  <gravity>true</gravity>
+
+</gazebo>
+
+
+
+<gazebo reference="Bearing_Housing_Timing_Pulley_3_3">
+
+  <material>Gazebo/Turquoise</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Bearing_Housing_Timing_Pulley_1_1">
+
+  <material>Gazebo/Turquoise</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Bearing_Housing_Timing_Pulley_2_1">
+
+  <material>Gazebo/Turquoise</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Bearing_Housing_Timing_Pulley_4_1">
+
+  <material>Gazebo/Turquoise</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Timing_Pulley_1_1">
+
+  <material>Gazebo/Turquoise</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Timing_Pulley_2_1">
+
+  <material>Gazebo/Turquoise</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Timing_Pulley_3_1">
+
+  <material>Gazebo/Turquoise</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="C_Plate_Wheel_4_1">
+
+  <material>Gazebo/BlueGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Wheel__4_1">
+
+  <material>Gazebo/TurquoiseGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Timing_Pulley_4_1">
+
+  <material>Gazebo/Turquoise</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="C_Plate_Wheel_3_1">
+
+  <material>Gazebo/BlueGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="C_Plate_Wheel_2_1">
+
+  <material>Gazebo/BlueGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="C_Plate_Wheel_1_1">
+
+  <material>Gazebo/BlueGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Wheel__3_1">
+
+  <material>Gazebo/TurquoiseGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Wheel__2_1">
+
+  <material>Gazebo/TurquoiseGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Wheel__1_1">
+
+  <material>Gazebo/TurquoiseGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="laser_sensor_1">
+
+  <material>Gazebo/TurquoiseGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="kinect_sensor_1">
+
+  <material>Gazebo/TurquoiseGlow</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Wheel_Rubber_3_1">
+
+  <material>Gazebo/Black</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Wheel_Rubber_2_1">
+
+  <material>Gazebo/Black</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Wheel_Rubber_4_1">
+
+  <material>Gazebo/Black</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo reference="Wheel_Rubber_1_1">
+
+  <material>Gazebo/Black</material>
+
+  <mu1>0.2</mu1>
+
+  <mu2>0.2</mu2>
+
+  <selfCollide>true</selfCollide>
+
+</gazebo>
+
+
+
+<gazebo>
+
+  <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+
+    <updateRate>100.0</updateRate>
+
+    <robotNamespace>/</robotNamespace>
+
+    <leftFrontJoint>Rev19</leftFrontJoint>
+
+    <rightFrontJoint>Rev18</rightFrontJoint>
+
+    <leftRearJoint>Rev20</leftRearJoint>
+
+    <rightRearJoint>Rev3</rightRearJoint>
+
+    <wheelSeparation>0.4</wheelSeparation>
+
+    <wheelDiameter>0.215</wheelDiameter>
+
+    <robotBaseFrame>base_link</robotBaseFrame>
+
+    <torque>20</torque>
+
+    <topicName>/cmd_vel</topicName>
+
+    <broadcastTF>true</broadcastTF>
+
+  </plugin>
+
+</gazebo>
+
+<gazebo reference="laser_sensor_1">
+    <sensor type="ray" name="head_hokuyo_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>20</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.78</min_angle>
+            <max_angle>0.78</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>10.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>laser_sensor_1</frameName>
+      </plugin>
+    </sensor>
+</gazebo>
+
+ <!-- <gazebo reference="kinect_sensor_1">
+    <sensor name="kinect_sensor_1" type="depth"> -->
+        <!-- openni plugin has the x pointing towards the scene, so rotate to have z -->
+        <!--<always_on>true</always_on>
+        <update_rate>100.0</update_rate>
+        <horizontal_fov>180</horizontal_fov>
+        <camera>
+            <image>
+                <format>R8G8B8</format>
+                <width>640</width>
+                <height>480</height>
+            </image>
+            <clip>
+                <near>0.01</near>
+                <far>8.0</far>
+            </clip>
+            <noise>
+                <type>gaussian</type>
+                <mean>0.5</mean>
+                <stddev>1.0</stddev>
+            </noise>
+        </camera>
+        <plugin name="kinect_plugin" filename="libgazebo_ros_openni_kinect.so">
+            <baseline>0.2</baseline>
+            <alwaysOn>true</alwaysOn> -->
+            <!-- Keep this zero, update_rate in the parent <sensor> tag
+            will control the frame rate. -->
+           <!-- <updateRate>0.0</updateRate>
+            <cameraName>kinect_test</cameraName>
+            <imageTopicName>/3d_image/image_raw</imageTopicName>
+            <cameraInfoTopicName>/3d_image/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>/3d_image/image_raw_depth</depthImageTopicName>
+            <depthImageInfoTopicName>/3d_image/camera_info</depthImageInfoTopicName>
+            <pointCloudTopicName>/3d_image/3d_cloud</pointCloudTopicName>
+            <frameName>camera_frame_optical</frameName>
+            <broadcastTF>true</broadcastTF>
+            <pointCloudCutoff>0.01</pointCloudCutoff>
+            <pointCloudCutoffMax>8.0</pointCloudCutoffMax>
+        </plugin>
+    </sensor>
+</gazebo> 
+-->
+
+<gazebo reference="kinect_sensor_1">
+  <sensor name="kinect_sensor_1" type="depth">
+    <update_rate>60</update_rate>
+    <camera>
+      <horizontal_fov>1.047198</horizontal_fov>
+      <image>
+        <width>640</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.02</near>
+        <far>3</far>
+      </clip>
+    </camera>
+    <plugin name="kinect_sensor_1_controller" filename="libgazebo_ros_openni_kinect.so">
+      <baseline>0.2</baseline>
+      <alwaysOn>true</alwaysOn>
+      <updateRate>1.0</updateRate>
+      <cameraName>kinect_ir</cameraName>
+      <imageTopicName>/kinect/color/image_raw</imageTopicName>
+      <cameraInfoTopicName>/kinect/color/camera_info</cameraInfoTopicName>
+      <depthImageTopicName>/kinect/depth/image_raw</depthImageTopicName>
+      <depthImageInfoTopicName>/kinect/depth/camera_info</depthImageInfoTopicName>
+      <pointCloudTopicName>/kinect/depth/points</pointCloudTopicName>
+      <frameName>camera_frame_optical</frameName>
+      <pointCloudCutoff>0.02</pointCloudCutoff>
+      <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
+      <distortionK1>0.00000001</distortionK1>
+      <distortionK2>0.00000001</distortionK2>
+      <distortionK3>0.00000001</distortionK3>
+      <distortionT1>0.00000001</distortionT1>
+      <distortionT2>0.00000001</distortionT2>
+      <CxPrime>0</CxPrime>
+      <Cx>0</Cx>
+      <Cy>0</Cy>
+      <focalLength>0</focalLength>
+      <hackBaseline>0</hackBaseline>
+    </plugin>
+  </sensor>
+</gazebo>
+
+<gazebo reference="rangefinder_1">        
+   <sensor type="ray" name="TeraRanger">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>50</update_rate>
+      <ray>
+         <scan>
+            <horizontal>
+               <samples>10</samples>
+               <resolution>1</resolution> 
+               <min_angle>-0.14835</min_angle>
+               <max_angle>0.14835</max_angle>
+            </horizontal>
+            <vertical>
+               <samples>10</samples>
+               <resolution>1</resolution> 
+               <min_angle>0</min_angle>
+               <max_angle>0</max_angle> 
+            </vertical>
+         </scan>
+         <range>
+            <min>0.01</min>
+            <max>4</max>
+            <resolution>0.02</resolution>
+         </range>
+      </ray>
+      <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+         <gaussianNoise>0.005</gaussianNoise>
+         <alwaysOn>true</alwaysOn>
+         <updateRate>50</updateRate>
+         <topicName>sensor/ir_front</topicName>
+         <frameName>rangefinder_1</frameName>
+         <radiation>INFRARED</radiation>
+         <fov>0.2967</fov>
+      </plugin>
+   </sensor>  
+   </gazebo>
+
+    <gazebo reference="imu_1">
+    <gravity>true</gravity>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>__default_topic__</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/imu_data </topicName>
+        <bodyName>imu_1</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>base_link</frameName>
+        <initialOrientationAsReference>false</initialOrientationAsReference>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+</robot>
+

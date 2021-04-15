@@ -1,0 +1,696 @@
+<?xml version="1.0" ?>
+<robot name="chassi_3" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find chassi_3_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find chassi_3_description)/urdf/chassi_3.trans" />
+<xacro:include filename="$(find chassi_3_description)/urdf/chassi_3.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.07666431934488961 0.0004122311229742803 0.1662937716762844"/>
+    <mass value="0.6146064275145914"/>
+    <inertia ixx="0.016732" ixy="4.4e-05" ixz="0.003616" iyy="0.019281" iyz="-4.3e-05" izz="0.031698"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_Housing_Timing_Pulley_3_3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.026234233040196592 0.012196670309370772 -0.0003397893305714661"/>
+    <mass value="0.04341469166020299"/>
+    <inertia ixx="1.3e-05" ixy="0.0" ixz="-0.0" iyy="1.3e-05" iyz="0.0" izz="2.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.232682 0.228609 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Bearing_Housing_Timing_Pulley_3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.232682 0.228609 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Bearing_Housing_Timing_Pulley_3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_Housing_Timing_Pulley_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.02623334470710828 -0.01219764047602151 -0.0003397893305703559"/>
+    <mass value="0.04341469166020299"/>
+    <inertia ixx="1.3e-05" ixy="0.0" ixz="0.0" iyy="1.3e-05" iyz="-0.0" izz="2.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.255318 -0.231391 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Bearing_Housing_Timing_Pulley_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.255318 -0.231391 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Bearing_Housing_Timing_Pulley_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_Housing_Timing_Pulley_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.026197599559218687 -0.017234273956998752 -0.0003397893305703559"/>
+    <mass value="0.04341469166020299"/>
+    <inertia ixx="1.3e-05" ixy="-0.0" ixz="-0.0" iyy="1.3e-05" iyz="-0.0" izz="2.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.232682 -0.236391 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Bearing_Housing_Timing_Pulley_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.232682 -0.236391 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Bearing_Housing_Timing_Pulley_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_Housing_Timing_Pulley_4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.026196711226129765 0.017233303790348098 -0.00033978933057154936"/>
+    <mass value="0.04341469166020299"/>
+    <inertia ixx="1.3e-05" ixy="-0.0" ixz="0.0" iyy="1.3e-05" iyz="0.0" izz="2.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.255318 0.233609 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Bearing_Housing_Timing_Pulley_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.255318 0.233609 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Bearing_Housing_Timing_Pulley_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Timing_Pulley_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.3941310927634287e-06 -2.937429852911677e-06 -0.03332178298448235"/>
+    <mass value="0.12675887698218385"/>
+    <inertia ixx="3.2e-05" ixy="-0.0" ixz="0.0" iyy="3.2e-05" iyz="0.0" izz="3.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.225318 -0.215391 -0.208005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Timing_Pulley_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.225318 -0.215391 -0.208005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Timing_Pulley_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Timing_Pulley_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.3941310942344742e-06 -2.9374298528839216e-06 -0.033321782984482406"/>
+    <mass value="0.12675887698218385"/>
+    <inertia ixx="3.2e-05" ixy="-0.0" ixz="0.0" iyy="3.2e-05" iyz="0.0" izz="3.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.202682 -0.215391 -0.208005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Timing_Pulley_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.202682 -0.215391 -0.208005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Timing_Pulley_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Timing_Pulley_3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.394131094900608e-06 -2.9374298088080675e-06 -0.03332178298448343"/>
+    <mass value="0.12675887698218385"/>
+    <inertia ixx="3.2e-05" ixy="-0.0" ixz="0.0" iyy="3.2e-05" iyz="0.0" izz="3.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.202682 0.212609 -0.208005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Timing_Pulley_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.202682 0.212609 -0.208005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Timing_Pulley_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="C_Plate_Wheel_4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.44166526336609e-07 -0.0006993240394426448 -0.04560776005952995"/>
+    <mass value="0.18592534486192586"/>
+    <inertia ixx="0.000486" ixy="-0.0" ixz="0.0" iyy="0.000332" iyz="-5e-06" izz="0.00027"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.225318 0.212609 -0.162005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/C_Plate_Wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.225318 0.212609 -0.162005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/C_Plate_Wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel__4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.441665880372536e-07 0.005999514916682214 -1.6730361050709686e-07"/>
+    <mass value="0.17476968958442823"/>
+    <inertia ixx="0.000264" ixy="0.0" ixz="0.0" iyy="0.000505" iyz="0.0" izz="0.000264"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.225318 0.217609 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel__4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.225318 0.217609 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel__4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Timing_Pulley_4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.3941310945397856e-06 -2.9374298087248008e-06 -0.03332178298448352"/>
+    <mass value="0.12675887698218385"/>
+    <inertia ixx="3.2e-05" ixy="-0.0" ixz="0.0" iyy="3.2e-05" iyz="0.0" izz="3.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.225318 0.212609 -0.208005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Timing_Pulley_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.225318 0.212609 -0.208005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Timing_Pulley_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="C_Plate_Wheel_3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.441665271692763e-07 -0.000699324039442506 -0.04560776005952995"/>
+    <mass value="0.18592534486192586"/>
+    <inertia ixx="0.000486" ixy="-0.0" ixz="0.0" iyy="0.000332" iyz="-5e-06" izz="0.00027"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.202682 0.212609 -0.162005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/C_Plate_Wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.202682 0.212609 -0.162005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/C_Plate_Wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="C_Plate_Wheel_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.441665265031425e-07 -0.0006993240394865818 -0.045607760059528754"/>
+    <mass value="0.18592534486192586"/>
+    <inertia ixx="0.000486" ixy="-0.0" ixz="0.0" iyy="0.000332" iyz="-5e-06" izz="0.00027"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.202682 -0.215391 -0.162005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/C_Plate_Wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.202682 -0.215391 -0.162005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/C_Plate_Wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="C_Plate_Wheel_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.441665251153637e-07 -0.0006993240394864708 -0.045607760059528824"/>
+    <mass value="0.18592534486192586"/>
+    <inertia ixx="0.000486" ixy="-0.0" ixz="0.0" iyy="0.000332" iyz="-5e-06" izz="0.00027"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.225318 -0.215391 -0.162005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/C_Plate_Wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.225318 -0.215391 -0.162005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/C_Plate_Wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel__3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.4416658870338743e-07 0.005999514916696813 -1.673036104654635e-07"/>
+    <mass value="0.17476968958442823"/>
+    <inertia ixx="0.000264" ixy="0.0" ixz="0.0" iyy="0.000505" iyz="0.0" izz="0.000264"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.202682 0.217609 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel__3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.202682 0.217609 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel__3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel__2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.4416658809276477e-07 0.005999514916652848 -1.6730360925809595e-07"/>
+    <mass value="0.17476968958442823"/>
+    <inertia ixx="0.000264" ixy="0.0" ixz="0.0" iyy="0.000505" iyz="0.0" izz="0.000264"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.202682 -0.210391 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel__2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.202682 -0.210391 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel__2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel__1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.441665864829414e-07 0.005999514916652959 -1.673036093274849e-07"/>
+    <mass value="0.17476968958442823"/>
+    <inertia ixx="0.000264" ixy="0.0" ixz="0.0" iyy="0.000505" iyz="0.0" izz="0.000264"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.225318 -0.210391 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel__1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.225318 -0.210391 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel__1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="laser_sensor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.4416653463552613e-07 -1.8085234254855247e-07 0.024999832696389265"/>
+    <mass value="0.2664070570244145"/>
+    <inertia ixx="0.000162" ixy="-0.0" ixz="-0.0" iyy="0.000162" iyz="-0.0" izz="0.000213"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.232682 -0.000924 -0.060005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/laser_sensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.232682 -0.000924 -0.060005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/laser_sensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="kinect_sensor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.006080179739104075 -3.3591612324983602e-06 0.028194586246962333"/>
+    <mass value="0.7552209784775847"/>
+    <inertia ixx="0.002646" ixy="0.0" ixz="-3.9e-05" iyy="0.000468" iyz="-0.0" izz="0.002689"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.226682 -0.001391 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/kinect_sensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.226682 -0.001391 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/kinect_sensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_frame_optical"/>
+
+<joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708"/>
+    <parent link="kinect_sensor_1"/>
+    <child link="camera_frame_optical"/>
+</joint>
+
+<link name="Wheel_Rubber_3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.441665451548893e-07 0.016999514916696795 -1.673036119226312e-07"/>
+    <mass value="0.06804595439895893"/>
+    <inertia ixx="0.000166" ixy="0.0" ixz="-0.0" iyy="0.00032" iyz="0.0" izz="0.000166"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.202682 0.228609 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel_Rubber_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.202682 0.228609 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel_Rubber_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_Rubber_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.4416654454426663e-07 0.01699951491665272 -1.6730361065975252e-07"/>
+    <mass value="0.06804595439895893"/>
+    <inertia ixx="0.000166" ixy="0.0" ixz="-0.0" iyy="0.00032" iyz="0.0" izz="0.000166"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.202682 -0.199391 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel_Rubber_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.202682 -0.199391 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel_Rubber_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_Rubber_4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.4416654426671087e-07 0.016999514916682112 -1.6730361196426458e-07"/>
+    <mass value="0.06804595439895893"/>
+    <inertia ixx="0.000166" ixy="0.0" ixz="-0.0" iyy="0.00032" iyz="0.0" izz="0.000166"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.225318 0.228609 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel_Rubber_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.225318 0.228609 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel_Rubber_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_Rubber_1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.4416654290668767e-07 0.01699951491665283 -1.6730361077077482e-07"/>
+    <mass value="0.008780123148252765"/>
+    <inertia ixx="2.1e-05" ixy="0.0" ixz="-0.0" iyy="4.1e-05" iyz="0.0" izz="2.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.225318 -0.199391 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel_Rubber_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.225318 -0.199391 -0.083005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/Wheel_Rubber_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rangefinder_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.003525329280092554 -0.00011221164505903502 -1.2687316620421663e-06"/>
+    <mass value="0.002162113693933333"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.238682 -0.000374 -0.048005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/rangefinder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.238682 -0.000374 -0.048005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/rangefinder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="imu_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="7.602336587336778e-08 -4.850832910218046e-07 0.001999832696388759"/>
+    <mass value="0.001695999999999994"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.00527 -0.001391 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.00527 -0.001391 -0.210005"/>
+    <geometry>
+      <mesh filename="package://chassi_3_description/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="imu_frame_optical"/>
+
+<joint name="imu_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708"/>
+    <parent link="imu_1"/>
+    <child link="imu_frame_optical"/>
+</joint>
+
+<joint name="Rigid5" type="fixed">
+  <origin rpy="0 0 0" xyz="0.232682 -0.228609 0.210005"/>
+  <parent link="base_link"/>
+  <child link="Bearing_Housing_Timing_Pulley_3_3"/>
+</joint>
+
+<joint name="Rigid7" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.255318 0.231391 0.210005"/>
+  <parent link="base_link"/>
+  <child link="Bearing_Housing_Timing_Pulley_1_1"/>
+</joint>
+
+<joint name="Rigid8" type="fixed">
+  <origin rpy="0 0 0" xyz="0.232682 0.236391 0.210005"/>
+  <parent link="base_link"/>
+  <child link="Bearing_Housing_Timing_Pulley_2_1"/>
+</joint>
+
+<joint name="Rigid9" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.255318 -0.233609 0.210005"/>
+  <parent link="base_link"/>
+  <child link="Bearing_Housing_Timing_Pulley_4_1"/>
+</joint>
+
+<joint name="Rigid10" type="fixed">
+  <origin rpy="0 0 0" xyz="0.03 -0.016 -0.002"/>
+  <parent link="Bearing_Housing_Timing_Pulley_1_1"/>
+  <child link="Timing_Pulley_1_1"/>
+</joint>
+
+<joint name="Rigid11" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.03 -0.021 -0.002"/>
+  <parent link="Bearing_Housing_Timing_Pulley_2_1"/>
+  <child link="Timing_Pulley_2_1"/>
+</joint>
+
+<joint name="Rigid12" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.03 0.016 -0.002"/>
+  <parent link="Bearing_Housing_Timing_Pulley_3_3"/>
+  <child link="Timing_Pulley_3_1"/>
+</joint>
+
+<joint name="Rigid4" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.046"/>
+  <parent link="Timing_Pulley_4_1"/>
+  <child link="C_Plate_Wheel_4_1"/>
+</joint>
+
+<joint name="Rev3" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 -0.005 -0.079"/>
+  <parent link="C_Plate_Wheel_4_1"/>
+  <child link="Wheel__4_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid13" type="fixed">
+  <origin rpy="0 0 0" xyz="0.03 0.021 -0.002"/>
+  <parent link="Bearing_Housing_Timing_Pulley_4_1"/>
+  <child link="Timing_Pulley_4_1"/>
+</joint>
+
+<joint name="Rigid15" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.046"/>
+  <parent link="Timing_Pulley_3_1"/>
+  <child link="C_Plate_Wheel_3_1"/>
+</joint>
+
+<joint name="Rigid16" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.046"/>
+  <parent link="Timing_Pulley_2_1"/>
+  <child link="C_Plate_Wheel_2_1"/>
+</joint>
+
+<joint name="Rigid17" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.046"/>
+  <parent link="Timing_Pulley_1_1"/>
+  <child link="C_Plate_Wheel_1_1"/>
+</joint>
+
+<joint name="Rev18" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 -0.005 -0.079"/>
+  <parent link="C_Plate_Wheel_3_1"/>
+  <child link="Wheel__3_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rev19" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 -0.005 -0.079"/>
+  <parent link="C_Plate_Wheel_2_1"/>
+  <child link="Wheel__2_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rev20" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 -0.005 -0.079"/>
+  <parent link="C_Plate_Wheel_1_1"/>
+  <child link="Wheel__1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid21" type="fixed">
+  <origin rpy="0 0 0" xyz="0.232682 0.000924 0.060005"/>
+  <parent link="base_link"/>
+  <child link="laser_sensor_1"/>
+</joint>
+
+<joint name="Rigid22" type="fixed">
+  <origin rpy="0 0 0" xyz="0.226682 0.001391 0.210005"/>
+  <parent link="base_link"/>
+  <child link="kinect_sensor_1"/>
+</joint>
+
+<joint name="Rigid23" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 -0.011 0.0"/>
+  <parent link="Wheel__3_1"/>
+  <child link="Wheel_Rubber_3_1"/>
+</joint>
+
+<joint name="Rigid24" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 -0.011 0.0"/>
+  <parent link="Wheel__2_1"/>
+  <child link="Wheel_Rubber_2_1"/>
+</joint>
+
+<joint name="Rigid25" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 -0.011 0.0"/>
+  <parent link="Wheel__4_1"/>
+  <child link="Wheel_Rubber_4_1"/>
+</joint>
+
+<joint name="Rigid26" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 -0.011 0.0"/>
+  <parent link="Wheel__1_1"/>
+  <child link="Wheel_Rubber_1_1"/>
+</joint>
+
+<joint name="Rigid27" type="fixed">
+  <origin rpy="0 0 0" xyz="0.238682 0.000374 0.048005"/>
+  <parent link="base_link"/>
+  <child link="rangefinder_1"/>
+</joint>
+
+<joint name="Rigid28" type="fixed">
+  <origin rpy="0 0 0" xyz="0.00527 0.001391 0.210005"/>
+  <parent link="base_link"/>
+  <child link="imu_1"/>
+</joint>
+
+</robot>

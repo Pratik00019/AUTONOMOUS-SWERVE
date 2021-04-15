@@ -1,0 +1,16 @@
+<launch>
+ <arg default="$(find chassi_3_description)/urdf/chassi_3.xacro" name="model"/>
+  <arg default="true" name="gui"/>
+  <arg default="$(find chassi_3_description)/launch/urdf.rviz" name="rvizconfig"/>
+  <param command="$(find xacro)/xacro $(arg model)" name="robot_description"/>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"/>
+  <!--arg name="use_tf_static" default="false"/-->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+    <!--param name="use_tf_static" value="$(arg use_tf_static)"/-->
+    <param name="publish_frequency" type="double" value="50.0" />
+ </node>
+  <!--node args="-d $(arg rvizconfig)" name="rviz" pkg="rviz" required="true" type="rviz"/-->
+  <node args="-d $(find chassi_3_description)/param/urdf.rviz" name="rviz" pkg="rviz" required="true" type="rviz"/>
+
+</launch>

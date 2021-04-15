@@ -1,0 +1,9 @@
+<launch>
+	<include file="$(find chassi_3_description)/nav/navigation.launch" />
+
+					<!--  ************** gmapping ***************  -->
+	<node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen"/>
+
+				<!--  ************* Visualisation **************  -->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find chassi_3_description)/launch/slam.rviz" required="true" />
+</launch>
