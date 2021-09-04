@@ -2,6 +2,8 @@
 A fully autonomous swerve drive which will move to the desired location autonomously by just one click.
 
 IMAGE OF SWERVE SPAWNED IN GAZEBO:
+![Screenshot 2021-09-04 235850](https://user-images.githubusercontent.com/62217310/132104621-ac89da57-bff2-4f25-a65b-96ddad2e9af1.jpg)
+
 (https://user-images.githubusercontent.com/62217310/114824495-9735fe80-9de2-11eb-9251-146b0f1be8f7.jpg)
 
 JUST A PREVIEW OF AUTONOMOUS SWERVE :
